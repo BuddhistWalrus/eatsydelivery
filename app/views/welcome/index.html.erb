@@ -1,72 +1,80 @@
-<h1>does this work?</h1>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Eatsy Delivery</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--<link rel="stylesheet" href="assets/css/main.css" />-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
 
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<div>burrito order form</div>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">EATSY DELIVERY</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="privacy.html">Privacy and Returns</a></li>                  
+                                            <li><a href="contactus.html">Contact Us</a></li>
+                                             <li><a href="order.html">Order Form</a></li>
+                                            
+                                           
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-<div class="order-form-container">
-<div class="order-form-content-container">
-<div class="order-form-header">Contact info:</div>
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>EATSY DELIVERY</h2>
+							<p>It's easy, Go Eatsy.
+                                </p>
+							<ul class="actions">
+								<li><class="button special"><%= link_to "Order Now", order_index_path, class: "button special" %></a></li>
+							</ul>
+						</div>
+					</section>
 
+				<!-- One -->
 
-<form action="/order" class="order-form" method="post">
- <input type="text" name="name" placeholder="full name"><br>
- <input type="text" name="email" placeholder="email"><br>
- <input type="text" name="phone" placeholder="phone number"><br>
+			
 
- <div class="order-form-header">Select your burrito:</div>
- <br>
- <div class="row">
- 	<div class="six columns">
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
 
- <input type="checkbox" name="chicken_burrito" value="chicken">
- 	<div class="produce-box-header">chicken burrito</div><br>
- 	
- <br>
-</div>
-<div class="six columns">
+			</div>
 
- <input type="checkbox" name="beef_burrito" value="beef">
- 	<div class="produce-box-header">beef burrito</div><br>
- 	<div class="produce-box-body">Apple cider donuts (Carpe Doughnut), Granola (Shady Lane Farm), Asian Pears (Saunders Brothers Orchard), Concord Table Grapes</div>
- <br>
-</div>
- </div>
- <div class="order-form-header">Add drinks:</div>
- <br>
- <div class="row">
- 	<div class="four columns">
+		<!-- Scripts -->
+			<script src="assets/jquery.min.js"></script>
+			<script src="assets/jquery.scrollex.min.js"></script>
+			<script src="assets/jquery.scrolly.min.js"></script>
+			<script src="assets/skel.min.js"></script>
+			<script src="assets/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/main.js"></script>
 
- <input type="checkbox" name="horchata" value="Horchata"><div class="produce-box-header">Horchata</div><div class="produce-box-body">Watermelon, Yellow Peaches (Saunders Brothers Orchard)</div>
- <br>
-
- <input type="checkbox" name="coke" value="Coke"><div class="produce-box-header">Coke</div>
-
- <br>
-</div>
-<div class="four columns">
-
- <input type="checkbox" name="sprite" value="Sprite"><div class="produce-box-header">Sprite</div>
- <br>
-</div>
-<div class="four columns">
-
- <input type="checkbox" name="water" value="Bottled Water"><div class="produce-box-header">Dasani</div>
- <br>
-</div>
- </div>
- <div class="order-form-header">Comments:</div>
- <br>
- please specify any dietary restrictions so we may accomodate you<br><textarea></textarea>
- <div class="order-form-header">Discount code:</div>
- <br>
-
- <input type="text" name="discount_code">
- <div class="order-form-header">Questions?</div>
- <br>
- <div class="order-form-questions">If you have any questions about your order, please feel free to contact us at <strong><%= mail_to "eatsydelivery@gmail.com", "eatsydelivery@gmail.com"%></strong></div>
- <br><br>
-
- <input type="image" value="Submit" src="/assets/submit.png">
-</form>
-</div>
-</div> 
+	</body>
+</html>

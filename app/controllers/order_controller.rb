@@ -3,6 +3,7 @@ class OrderController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
 	def index
+		@order = Order.new
 	end
 
 	def create

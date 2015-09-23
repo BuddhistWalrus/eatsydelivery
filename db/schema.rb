@@ -11,17 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 0) do
-=======
 ActiveRecord::Schema.define(version: 20150911004444) do
->>>>>>> b56208d74b8701c2bb24385f2dcc8c41e91b045b
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-=======
   create_table "orders", force: :cascade do |t|
     t.string "name"
     t.string "number"
@@ -30,5 +24,4 @@ ActiveRecord::Schema.define(version: 20150911004444) do
     t.string "location"
   end
 
->>>>>>> b56208d74b8701c2bb24385f2dcc8c41e91b045b
 end

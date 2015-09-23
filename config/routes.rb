@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :order, :only => [:create, :new]
+  resources :order, :only => [:create, :new, :index]
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
@@ -10,10 +10,25 @@ Rails.application.routes.draw do
   get 'welcome/complete' => 'welcome#complete'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
+  get 'order' => 'order#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+
+  #Fix JS routes and SVG
+  get '/images/burrito_banner.jpg', :to => redirect('/assets/burrito_banner.jpg')
+  
+  get '/assets/images/bars.svg', :to => redirect('/assets/bars.svg')
+  get '/assets/images/close.svg', :to => redirect('/assets/close.svg')
+  get '/assets/images/arrow.svg', :to => redirect('/assets/arrow.svg')
+
+#Fix fonts
+  get '/fonts/fontawesome-webfont.woff?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff')
+  get '/fonts/fontawesome-webfont.ttf?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.ttf')
+  get '/fonts/fontawesome-webfont.eot?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.eot')
+  get '/fonts/fontawesome-webfont.svg?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.svg')
+  get '/fonts/fontawesome-webfont.woff2?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff2')
+    
   # Example resource route with options:
   #   resources :products do
   #     member do
