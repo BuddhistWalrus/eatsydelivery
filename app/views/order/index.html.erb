@@ -26,11 +26,15 @@
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a href="#menu" class="menuToggle"></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Privacy and Returns</a></li>                                                               <li><a href="contactus.html">Contact Us</a></li>
+											<li><%= link_to "Home", root_path %></a></li>
+											<li><%= link_to "Privacy and Returns", root_path %></a></li>                  
+                                            <li><%= link_to "Contact Us", root_path %></a></li>
+                                            <li><%= link_to "Order Form", order_index_path %></li>
+                                            
+                                           
 										</ul>
 									</div>
 								</li>
