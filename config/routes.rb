@@ -18,9 +18,9 @@ Rails.application.routes.draw do
   #Fix JS routes and SVG
   get '/images/burrito_banner.jpg', :to => redirect('/assets/burrito_banner-1ceceebf9debb57c689c91b17df04fa84b51da280c758ba5b1dab64e83b5f4fe.jpg')
 
-  get '/assets/images/bars.svg', :to => redirect('/assets/bars.svg')
-  get '/assets/images/close.svg', :to => redirect('/assets/close.svg')
-  get '/assets/images/arrow.svg', :to => redirect('/assets/arrow.svg')
+  get '/assets/images/bars.svg', :to => redirect('/assets/bars-0352242748c066b3fd7959353a2af63b7753b86795376a066a19e8d20df778a2.svg')
+  get '/assets/images/close.svg', :to => redirect('/assets/close-322c343d196e21d130e7fdc8b67d72552eab91f1be48c7cdd3ecdeffca713ea4.svg')
+  get '/assets/images/arrow.svg', :to => redirect('/assets/arrow-a79f7ef365a73e45a957d161ca47a4a3a1cc4d09c70882b34d8cfc1530fa0bf4.svg')
 
 #Fix fonts
   get '/fonts/fontawesome-webfont.woff?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff')
