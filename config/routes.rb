@@ -16,8 +16,8 @@ Rails.application.routes.draw do
 
 
   #Fix JS routes and SVG
-  get '/images/burrito_banner.jpg', :to => redirect('/assets/burrito_banner.jpg')
-  
+  get '/images/burrito_banner.jpg', :to => redirect('/assets/burrito_banner-1ceceebf9debb57c689c91b17df04fa84b51da280c758ba5b1dab64e83b5f4fe.jpg')
+
   get '/assets/images/bars.svg', :to => redirect('/assets/bars.svg')
   get '/assets/images/close.svg', :to => redirect('/assets/close.svg')
   get '/assets/images/arrow.svg', :to => redirect('/assets/arrow.svg')
