@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.min.js
 //= require jquery.scrollex.min.js
 //= require jquery.scrolly.min.js
