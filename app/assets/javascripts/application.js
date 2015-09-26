@@ -12,11 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.min.js
-//= require jquery.scrollex.min.js
-//= require jquery.scrolly.min.js
-//= require main.js
-//= require order.js
-//= require skel.min.js
-//= require util.js
+//= require jquery.min
+//= require jquery.scrollex.min
+//= require jquery.scrolly.min
+//= require main
+//= require order
+//= require skel.min
+//= require util
 //= require_tree .
