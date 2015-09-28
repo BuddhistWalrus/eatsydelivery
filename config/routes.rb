@@ -29,6 +29,11 @@ Rails.application.routes.draw do
   get '/fonts/fontawesome-webfont.svg?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.svg')
   get '/fonts/fontawesome-webfont.woff2?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff2')
     
+
+
+#Fix Paypal webhook
+  post "/order/complete" => "order#complete"
+  post "/hook" => "order#hook"
   # Example resource route with options:
   #   resources :products do
   #     member do
