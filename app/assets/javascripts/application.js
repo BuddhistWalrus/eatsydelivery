@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.min
+//= require order
 //= require jquery.scrollex.min
 //= require jquery.scrolly.min
-//= require order
 //= require skel.min
 //= require util
 //= require main
