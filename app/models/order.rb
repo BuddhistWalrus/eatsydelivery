@@ -8,8 +8,8 @@ class Order < ActiveRecord::Base
         upload: 1,
         return: "#{Rails.application.secrets.app_host}/order/complete",
         invoice: id,
-        amount: 1,
-        item_name: "test receipt",
+        amount: self.total,
+        item_name: self.contents,
         item_number: 1,
         quantity: '1',
         notify_url: "#{Rails.application.secrets.app_host}/hook"
@@ -17,4 +17,39 @@ class Order < ActiveRecord::Base
     "#{Rails.application.secrets.paypal_host}/cgi-bin/webscr?" + values.to_query
   end
 
+
+  #total the price
+  #def total_price()
+		#self.total = 0
+
+
+	
+		#check for order contents
+
+		#burritos
+		#if self.contents.include? "chicken"
+		#	self.total += 12
+		#end
+		#if self.contents.include? "veg"
+		#	self.total += 6.5
+		#end
+		#if self.contents.include? "steak"
+		#	self.total += 4.5
+		#end
+		#if self.contents.include? "carnitas"
+		#	self.total += 4.5
+		#end
+		#if self.contents.include? "barb"
+		#	self.otal += 2.5
+		#end
+		#if self.contents.include? "chip/mole"
+		#	self.total += 3
+		#end
+		
+		#check alacarte items
+		#check for discount
+		
+
+
+	#end
 end

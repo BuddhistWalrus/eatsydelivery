@@ -38,7 +38,7 @@
 						</nav>
 					</header>
 
-				
+			<form action="/order" method="post" accept-charset="utf-8">
             <h1 id = "order-title">Order Form</h1>
 
               <table class = "table-wrapper" >
@@ -55,7 +55,7 @@
                         <tr class="odd">
                             <td class="product-title">Chicken Burrito</td>
                             
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="num_chicken"></td>
+                            <td class="num-pallets"><input name="chicken" type="text" class="num-pallets-input" id="num_chicken"></td>
                             <td class="price-per-pallet">$<span>12</span></td>
                             
                             <td class="row-total"><input type="text" class="row-total-input" id="sparkle-row-total" disabled="disabled"></td> 
@@ -64,7 +64,7 @@
                         <tr class="even">
                             <td class="product-title">Steak Burrito</td>
     
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="turface-mvp-num-pallets"></td>
+                            <td class="num-pallets"><input name="steak" type="text" class="num-pallets-input" id="turface-mvp-num-pallets"></td>
                             
                             <td class="price-per-pallet">$<span>12</span></td>
                             
@@ -76,7 +76,7 @@
                             <td class="product-title">Carnitas Burrito</td>
                             
                              
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="turface-pro-league-num-pallets" ></td>
+                            <td class="num-pallets"><input name="carn" type="text" class="num-pallets-input" id="turface-pro-league-num-pallets" ></td>
                             
                             <td class="price-per-pallet">$<span>12</span></td>
                             
@@ -87,7 +87,7 @@
                         <tr class="even">
                             <td class="product-title">Barbacoa Burrito</td>
                             
-                             <td class="num-pallets"><input type="text" class="num-pallets-input" id="turface-pro-league-red-num-pallets"></td>
+                             <td class="num-pallets"><input name="barb" type="text" class="num-pallets-input" id="turface-pro-league-red-num-pallets"></td>
                     
                             <td class="price-per-pallet">$<span>12</span></td>
                             
@@ -98,7 +98,7 @@
                         <tr class="odd">
                             <td class="product-title">Vegetarian Burrito</td>
                             
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="turface-quick-dry-num-pallets" ></td>
+                            <td class="num-pallets"><input name="veg" type="text" class="num-pallets-input" id="turface-quick-dry-num-pallets" ></td>
                             
                             <td class="price-per-pallet">$<span>12</span></td>
                             
@@ -109,7 +109,7 @@
                             
                             <td class="product-title">Chips and Guacamole </td>
                             
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="turface-mound-clay-red-num-pallets"></td>
+                            <td class="num-pallets"><input name="ChipMole" type="text" class="num-pallets-input" id="turface-mound-clay-red-num-pallets"></td>
                             
                             <td class="price-per-pallet">$<span>5</span></td>
                            
@@ -119,7 +119,7 @@
                         <tr class="odd">
                             <td class="product-title">Drink(specify in comments) </td>
                             
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="diamond-pro-red-num-pallets" ></td>
+                            <td class="num-pallets"><input name="drink" type="text" class="num-pallets-input" id="diamond-pro-red-num-pallets" ></td>
                             
                             <td class="price-per-pallet">$<span>2</span></td>
                            
@@ -127,15 +127,15 @@
                        
                        </tr>
                        
-                        <tr class="even">
+                        <!--<tr class="even">
                             <td class="product-title">Combo(Burrito,Chips/Guacamole,Drink) </td>
                            
-                            <td class="num-pallets"><input type="text" class="num-pallets-input" id="diamond-pro-drying-agent-num-pallets"></td>
+                            <td class="num-pallets"><input name="combo" type="text" class="num-pallets-input" id="diamond-pro-drying-agent-num-pallets"></td>
                             
                             <td class="price-per-pallet">$<span>15</span></td>
                             
                             <td class="row-total"><input type="text" class="row-total-input" id="diamond-pro-drying-agent-row-total" disabled="disabled"></td> 
-                        </tr>  
+                        </tr>  -->
                     </table>
 
     <div class="clear"></div>
@@ -146,39 +146,38 @@
 
             <br />
 
-            <form class="foxycart" action="/order" method="post" accept-charset="utf-8" id="foxycart-order-form">
+            
 
-                <input type="hidden" name="name" value="Multi Product Order" />
-                <input type="hidden" id="fc-price" name="price" value="0" />
+                
                 <!-- Main -->
 			                 
                         <h2>Delivery Information</h2>
                             
                             <fieldset>
                                 <div>
-                                    <input id="name" type="text" placeholder="Name">
+                                    <input name="name" type="text" id= "name" placeholder="Name">
                                 </div>
 
                                 <div>
                                     <label for="location"></label>
-                                    <input id="location" type="text" placeholder="Location">
+                                    <input name="location" type="text" placeholder="Location">
                                 </div>
                                 
                                 <div>
                                     <label for="phone_number"></label>
-                                    <input id="phone_number" type="text" placeholder="Phone Number">
+                                    <input id="phone_number" type="text" name="number" placeholder="Phone Number">
                                 </div>
 
                                 <div >
                                     <label for="email"></label>
-                                    <input id="email" type="email" placeholder="Email Address">
+                                    <input id="email" name="email" type="email" placeholder="Email Address">
                                 </div>
                                 
                                 <div id = "day_select">
                                     <label for="day_select">Delivery Date</label>
-                                <input type="radio" name="sex" value="male" id = "wed" checked>
+                                <input type="radio" name="day" value="wed" id = "wed" checked>
                                     <label for="wed">Wednesday</label>
-                                <input type="radio" name="sex" value="female" id = "fri">
+                                <input type="radio" name="day" value="fri" id = "fri">
                                     <label for="fri">Friday</label>
                                 </div>
                                 
