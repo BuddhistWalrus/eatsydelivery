@@ -69,6 +69,13 @@ class OrderController < ApplicationController
 			@order.total += 5* params[:ChipMole].to_f
 		end
 
+		if params[:drink].to_f > 0
+			@order.contents += params[:drink]
+			@order.contents += "drink"
+			@order.contents += ","
+			@order.total += 2* params[:drink].to_f
+		end
+
 
 
 		if @order.save
