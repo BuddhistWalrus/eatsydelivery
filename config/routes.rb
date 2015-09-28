@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   get 'order' => 'order#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  get 'privacy' => 'privacy#index'
 
+  get 'contact' => 'contact#index'
 
   #Fix JS routes and SVG
   get '/images/burrito_banner.jpg', :to => redirect('/assets/burrito_banner-1ceceebf9debb57c689c91b17df04fa84b51da280c758ba5b1dab64e83b5f4fe.jpg')

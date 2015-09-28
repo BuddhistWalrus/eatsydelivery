@@ -21,26 +21,9 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">EATSY DELIVERY</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"></a>
-									<div id="menu">
-										<ul>
-											<li><%= link_to "Home", root_path %></li>
-											<li><%= link_to "Privacy and Returns", root_path %></li>                  
-                                            <li><%= link_to "Contact Us", root_path %></li>
-                                            <li><%= link_to "Order Form", order_index_path %></li>
-                                            
-                                           
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+					
+						<%= render "layouts/nav" %>
+					
 
 				<!-- Banner -->
 					<section id="banner">
