@@ -17,6 +17,19 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.assets.compress = true
 
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: 'eatsydelivery.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: 587,
+    user_name: "bradner.hill@gmail.com",
+    password: "8ed8jG18FDHZ8qw4Mqdp-Q"
+  }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
