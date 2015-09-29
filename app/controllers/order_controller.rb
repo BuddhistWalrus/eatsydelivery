@@ -26,6 +26,7 @@ class OrderController < ApplicationController
 		#build the order object from POST params
 		@order.contents = ""
 		@order.total = 0
+		@order.day = ""
 		@order.name = params[:name]
 		@order.email = params[:email]
 		@order.number = params[:number]
