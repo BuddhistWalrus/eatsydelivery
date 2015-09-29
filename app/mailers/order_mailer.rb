@@ -1,5 +1,5 @@
 class OrderMailer < ActionMailer::Base
-	default from: "gabecorso@gmail.com"
+	default from: "eatsydelivery@gmail.com"
 
 	def order_submitted_email(order)
 		@order = order
