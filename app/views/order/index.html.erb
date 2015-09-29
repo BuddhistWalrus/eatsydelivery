@@ -22,7 +22,7 @@
 					
 
 			<form action="/order" method="post" accept-charset="utf-8">
-            <h1 id = "order-title">Order Form</h1>
+            <h2 id = "order-title">Order Form</h2>
 
               <table class = "table-wrapper" >
                         <tr id = "tablehead">
@@ -121,17 +121,24 @@
                         </tr>  -->
                     </table>
 
-    <div class="clear"></div>
+
+
+        <div >
+            <span>Order Total: </span>
+            <input type="text" class="total-box" value="$0" id="order-total" disabled="disabled"
+style="text-align: center;">
+            <br />
+        </div>
 
         <div style="text-align: center;">
-            <span>ORDER TOTAL: </span>
-            <input type="text" class="total-box" value="$0" id="order-total" disabled="disabled">
-
+            <span>Comments: </span>
+            <input type="text"  id="comments">
             <br />
+            </div>
 
-            
 
-                
+
+
                 <!-- Main -->
 			                 
                         <h2>Delivery Information</h2>
@@ -157,7 +164,7 @@
                                 </div>
                                 
                                 <div id = "day_select">
-                                    <label for="day_select">Delivery Date</label>
+                                <label for="day_select" style = "text-align:center;">Delivery Date:</label>
                                 <input type="radio" name="day" value="wed" id = "wed" checked>
                                     <label for="wed">Wednesday</label>
                                 <input type="radio" name="day" value="fri" id = "fri">
@@ -165,18 +172,10 @@
                                 </div>
                                 
                             </fieldset>
-                                <div>
 
-                
-        </div>
 
-    </div>
-                                <div>
-                                    
-                               
-                                    
-                                </div>
-                            <input type="submit" value="Submit">
+
+                            <input type="submit" value="Submit" class = "button special">
                         </form>
 						
 				
@@ -184,8 +183,9 @@
 				<!-- Footer -->
 					<footer id="footer">
                         <ul class = "icons">
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+
+                            <li><a href="mailto:bradner.hill@gmail.com" class = "icon fa-envelope-o"></a></li>
+
 						</ul>
 					</footer>
 
