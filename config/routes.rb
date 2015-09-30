@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   get '/fonts/fontawesome-webfont.woff?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff')
   get '/fonts/fontawesome-webfont.ttf?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.ttf')
   get '/fonts/fontawesome-webfont.eot?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.eot')
-  get '/fonts/fontawesome-webfont.svg?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.svg')
+  #get '/fonts/fontawesome-webfont.svg?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.svg')
   get '/fonts/fontawesome-webfont.woff2?v=4.3.0', :to => redirect('/assets/fontawesome-webfont.woff2')
     
 
