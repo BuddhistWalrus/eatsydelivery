@@ -36,31 +36,31 @@ class OrderController < ApplicationController
 		if params[:chicken].to_f > 0
 			@order.contents += params[:chicken]
 			@order.contents += "chicken,"
-			@order.total += 12* params[:chicken].to_f
+			@order.total += 11* params[:chicken].to_f
 		end
 		if params[:steak].to_f > 0
 			@order.contents += params[:steak]
 			@order.contents += "steak"
 			@order.contents += ","
-			@order.total += 12* params[:steak].to_f
+			@order.total += 11* params[:steak].to_f
 		end
 		if params[:barb].to_f > 0
 			@order.contents += params[:barb]
 			@order.contents += "barb"
 			@order.contents += ","
-			@order.total += 12* params[:barb].to_f
+			@order.total += 11* params[:barb].to_f
 		end
 		if params[:veg].to_f > 0
 			@order.contents += params[:veg]
 			@order.contents += "veg"
 			@order.contents += ","
-			@order.total += 12* params[:veg].to_f
+			@order.total += 11* params[:veg].to_f
 		end
 		if params[:carn].to_f > 0
 			@order.contents += params[:carn]
 			@order.contents += "carnitas"
 			@order.contents += ","
-			@order.total += 12* params[:carn].to_f
+			@order.total += 11* params[:carn].to_f
 		end
 
 		#Combo Param
