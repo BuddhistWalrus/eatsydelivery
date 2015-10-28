@@ -63,7 +63,7 @@ class OrderController < ApplicationController
 			@order.total += 11* params[:carn].to_f
 		end
 
-		#Combo Param
+		#Combo Param, chips, drink
 		if params[:ChipMole].to_f > 0
 			@order.contents += params[:ChipMole]
 			@order.contents += "chip/mole"
@@ -78,6 +78,17 @@ class OrderController < ApplicationController
 			@order.total += 2* params[:drink].to_f
 		end
 
+		if params[:combo].to_f > 0
+			@order.contents += params[:combo]
+			@order.contents += "combo"
+			@order.contents += ","
+			@order.total += 15* params[:combo].to_f
+		end
+
+		#check for comments
+		if params[:comments]
+			@order.comments = params[:comments]
+		end
 
 
 		if @order.save
