@@ -1437,17 +1437,21 @@
 
 		@media screen and (max-width: 780px) {
 
-			body, input, select, textarea {
+			 body,input, select, textarea {
 				font-size: 9pt;
 				letter-spacing: 0.0375em;
 			}
+             .contact {
+                 
+                 font-size:11pt;
+             }
             
         }
 
 
 @media screen and (max-width: 600px) {
 
-			body, input, select, textarea {
+			body,input, select, textarea {
 				font-size: 7pt;
 				letter-spacing: 0.0375em;
 			}
@@ -1455,7 +1459,7 @@
         }
         @media screen and (max-width: 480px) {
 
-			body, input, select, textarea {
+			 body,input, select, textarea {
 				font-size: 6pt;
 				letter-spacing: 0.0375em;
                 
@@ -1530,6 +1534,7 @@
 				font-size: 1.1em;
 				line-height: 1.65em;
 			}
+           
 
 		}
 
@@ -3938,3 +3943,9 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+/* Special Id Changes */
+
+#contact_link {
+    color: white;
+}
