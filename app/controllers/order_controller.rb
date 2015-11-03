@@ -31,7 +31,10 @@ class OrderController < ApplicationController
 		@order.email = params[:email]
 		@order.number = params[:number]
 		@order.location = params[:location]
-		@order.day = params[:day]
+		if params[:day] 
+			@order.day = params[:day]
+		end
+
 		#burrito params
 		if params[:chicken].to_f > 0
 			@order.contents += params[:chicken]
