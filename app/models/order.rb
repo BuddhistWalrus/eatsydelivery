@@ -5,7 +5,7 @@ class Order < ActiveRecord::Base
 	#build the paypal url receipt
 	def paypal_url(return_path)
     values = {
-        business: "bradner.hill-facilitator@gmail.com",
+        business: "bradner.hill@gmail.com",
         cmd: "_xclick",
         upload: 1,
         return: "#{Rails.application.secrets.app_host}/order/complete",
