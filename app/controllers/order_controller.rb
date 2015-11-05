@@ -81,6 +81,13 @@ class OrderController < ApplicationController
 			@order.total += 2* params[:drink].to_f
 		end
 
+		if params[:guac].to_f > 0
+			@order.contents += params[:guac]
+			@order.contents += "guac"
+			@order.contents += ","
+			@order.total += 2* params[:guac].to_f
+		end
+
 		if params[:combo].to_f > 0
 			@order.contents += params[:combo]
 			@order.contents += "combo"
