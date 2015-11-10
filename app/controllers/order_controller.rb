@@ -95,9 +95,23 @@ class OrderController < ApplicationController
 			@order.total += 15* params[:combo].to_f
 		end
 
+		if params[:bowl].to_f > 0
+			@order.contents += params[:bowl]
+			@order.contents += "bowl"
+			@order.contents += ","
+			@order.total += 11* params[:bowl].to_f
+		end
 		#check for comments
 		if params[:comments]
 			@order.comments = params[:comments]
+		end
+
+		if params[:add]
+			@order.addition = params[:add]
+		end
+
+		if params[:sub]
+			@order.sub = params[:sub]
 		end
 
 
